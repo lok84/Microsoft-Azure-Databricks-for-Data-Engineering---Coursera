@@ -1,0 +1,177 @@
+Knowledge check --> [Answers marked with **]
+
+Question 1)
+Which of the following SparkSession functions returns a DataFrameReader
+
+createDataFrame(..)
+emptyDataFrame(..)
+.read(..) **
+.readStream(..)
+
+Question 2)
+When using a notebook and a spark session. We can read a CSV file.
+Which of the following can be used to view the first couple of thousand characters of a file
+
+%fs ls /mnt/training/wikipedia/pageviews/
+%fs head /mnt/training/wikipedia/pageviews/pageviews_by_second.tsv **
+%fs dir /mnt/training/wikipedia/pageviews/
+
+Question 3)
+Which DataFrame method do you use to create a temporary view?
+
+createTempView()
+createTempViewDF()
+createOrReplaceTempView() **
+
+Question 4)
+How do you define a DataFrame object?
+
+Use the createDataFrame() function
+Use the DF.create() syntax
+Introduce a variable name and equate it to something like myDataFrameDF = **
+
+Question 5)
+How do you cache data into the memory of the local executor for instant access?
+
+.cache() **
+.save().inMemory()
+.inMemory().save()
+
+Question 6)
+What is the  Python syntax for defining a DataFrame in Spark from an existing Parquet file in DBFS?
+
+IPGeocodeDF = spark.read.parquet(“dbfs:/mnt/training/ip-geocode.parquet”) **
+IPGeocodeDF = parquet.read(“dbfs:/mnt/training/ip-geocode.parquet”)
+IPGeocodeDF = spark.parquet.read(“dbfs:/mnt/training/ip-geocode.parquet”)
+ 
+
+
+Knowledge check [PART 2] -->
+
+Question 1)
+Among the most powerful components of Spark are Spark SQL. At its core lies the Catalyst optimizer. When you execute code, Spark SQL uses Catalyst’s general tree transformation framework in four phases. In which order are these phases carried out?
+
+1: analyzing a logical plan to resolve references **
+2. logical plan optimization
+3: physical planning
+4. code generation to compile parts of the query to Java bytecode
+
+Question 2)
+Which of the following statements describes a wide transformation?
+
+A wide transformation requires sharing data across workers. It does so by shuffling data. **
+A wide transformation can be applied per partition/worker with no need to share or shuffle data to other workers
+A wide transformation applies data transformation over a large number of columns
+
+Question 3)
+Which of the following statements describes a narrow transformation?
+
+Can be applied per partition/worker with no need to share or shuffle data to other workers **
+Requires sharing data across workers and by shuffling data.
+Applies data transformation over a large number of columns
+
+Question 4)
+Which feature of Spark determines how your code is executed?
+
+Java Garbage Collection
+Tungsten Record Format
+Catalyst Optimizer **
+
+Question 5)
+Which feature of Spark of optimization is used in shuffling operations during wide transformations?
+
+Lazy Execution
+Catalyst Optimizer
+Tungsten Record Format **
+
+Question 6)
+If you create a DataFrame that will read some data from  Azure Blob Storage, and then you create another DataFrame by filtering the initial DataFrame. What feature of Spark causes these transformations to be analyzed?
+
+Java Garbage Collection
+Tungsten Record Format
+Lazy Execution **
+
+
+
+Test prep Quiz Answers -->
+
+Question 1)
+When creating a new cluster in Azure Databricks there are three Cluster Modes that can be set. Which of the following are valid Cluster Modes? Select three valid options.
+
+Low Concurrency
+Single Node **
+Multi Node
+Standard **
+High Concurrency **
+
+Question 2)
+Which DataFrame method do you use to create a temporary view?
+
+createTempView()
+createTempViewDF()
+createOrReplaceTempView() **
+
+Question 3)
+How do you define a DataFrame object?
+
+Use the DF.create() syntax
+Use the createDataFrame() function
+Introduce a variable name and equate it to something like myDataFrameDF = **
+
+Question 4)
+How do you cache data into the memory of the local executor for instant access?
+
+.save().inMemory()
+.cache() **
+.inMemory().save()
+
+Question 5)
+What is the  Python syntax for defining a DataFrame in Spark from an existing Parquet file in DBFS?
+
+IPGeocodeDF = spark.read.parquet(“dbfs:/mnt/training/ip-geocode.parquet”) **
+IPGeocodeDF = spark.parquet.read(“dbfs:/mnt/training/ip-geocode.parquet”)
+IPGeocodeDF = parquet.read(“dbfs:/mnt/training/ip-geocode.parquet”)
+
+Question 6)
+Among the most powerful components of Spark are Spark SQL. At its core lies the Catalyst optimizer. When you execute code, Spark SQL uses Catalyst’s general tree transformation framework in four phases. In which order are these phases carried out?
+1: logical plan optimization
+2: analyzing a logical plan to resolve references
+3: code generation to compile parts of the query to Java bytecode
+4: physical planning
+
+2, 3, 1, 4
+1, 2, 3, 4
+2, 1, 4, 3 **
+3, 2, 1, 4
+
+Question 7)
+Which of the following statements describes a wide transformation?
+
+A wide transformation applies data transformation over a large number of columns
+A wide transformation can be applied per partition/worker with no need to share or shuffle data to other workers
+A wide transformation requires sharing data across workers. It does so by shuffling data. **
+
+Question 8)
+Which of the following statements describes a narrow transformation?
+
+A narrow transformation can be applied per partition/worker with no need to share or shuffle data to other workers **
+A narrow transformation applies data transformation over a large number of columns
+A narrow transformation requires sharing data across workers. It does so by shuffling data. **
+
+Question 9)
+Which feature of Spark determines how your code is executed?
+
+Tungsten Record Format
+Java Garbage Collection
+Catalyst Optimizer **
+
+Question 10)
+Which feature of Spark of optimization is used in shuffling operations during wide transformations?
+
+Catalyst Optimizer
+Lazy Execution
+Tungsten Record Format **
+
+
+
+-- LOK SETH

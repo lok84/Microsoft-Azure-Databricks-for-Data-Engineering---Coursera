@@ -1,0 +1,130 @@
+Knowledge check --> [Answers marked with **]
+
+Question 1)
+Apache Spark is a unified processing engine that can analyze big data with which of the following features? Select all that apply.
+
+Support for multiple Drivers running in parallel on a cluster
+Graph Processing **
+SQL **
+Real-time stream analysis **
+Machine Learning **
+
+Question 2)
+Which of the following Databricks features are not Open-Source Spark? Select all that apply.
+
+Databricks Workspace **
+Databricks Runtime **
+MLFlow
+Databricks Workflows **
+
+Question 3)
+Apache Spark notebooks allow which of the following? Select all that apply.
+
+Rendering of formatted text **
+Display graphical visualizations **
+Create new Workspace
+Execution of code **
+
+Question 4)
+In  Azure Databricks when creating a new Notebook, the default languages available to select from are? Select all that apply.
+
+R **
+Java
+Python **
+Scala **
+SQL **
+
+Question 5)
+If your notebook is attached to a cluster, you can carry out which of the following from within the notebook? Select all that apply.
+
+Restart the cluster **
+Delete the cluster
+Detach your notebook from the cluster **
+Attach to another cluster **
+
+
+
+
+
+Test prep Quiz Answers -->
+
+Question 1)
+Azure Databricks Runtime adds several key capabilities to Apache Spark workloads that can increase performance and reduce costs. Which of the following are features of Azure Databricks? Select all that apply.
+
+Auto-scaling and auto-termination **
+Indexing **
+Caching **
+Parallel Cluster Drivers
+High-speed connectors to Azure storage services **
+
+Question 2)
+Apache Spark supports which of the following languages? Select all that apply.
+
+ORC
+Scala **
+Java **
+Python **
+
+Question 3)
+Which of the following statements are True Select all that apply.
+
+To use your Azure Databricks notebook to run code, you must attach it to a cluster **
+You can detach a notebook from a cluster and attach it to another cluster. **
+To use your Azure Databricks notebook to run code you do not require a cluster
+Once created a notebook can only be connected to the original cluster.
+
+Question 4)
+Which of the following Databricks features are not Open-Source Spark?
+
+MLFlow
+Databricks Workflows **
+Databricks Runtime **
+Databricks Workspace **
+
+Question 5)
+How many drivers does a Cluster have?
+
+Configurable between one and eight
+Two, running in parallel
+Only one **
+
+Question 6)
+What type of process are the driver and the executors?
+
+C++ processes
+Java processes **
+Python processes
+
+Question 7)
+You work with Big Data as a data engineer, and you must process real-time data. This is referred to as having which of the following characteristics?
+
+Variety
+High volume
+High velocity **
+
+Question 8)
+Spark’s performance is based on parallelism. Which of the following Scalability methods is limited to a finite amount of RAM, Threads and CPU speeds?
+
+Diagonal Scaling
+Vertical Scaling **
+Horizontal Scaling
+
+Question 9)
+Spark Cluster use two levels of parallelization. Which of the following are levels of parallelization?
+
+Executor **
+Slot **
+Partition
+Job
+
+Question 10)
+In an Apache Spark Cluster jobs are divided into which of the following?
+
+Executors
+Tasks **
+Slots
+Drivers
+
+
+-- LOK SETH
+ 

@@ -1,0 +1,226 @@
+Knowledge check --> [Answers marked with **]
+
+Question 1)
+Azure DevOps is a collection of services that provide an end-to-end solution for the five core practices of DevOps. The five core practices of DevOps as defined by Microsoft are?
+
+Planning and Tracking **
+Program Management
+Monitoring and Operations **
+Build and Test **
+Delivery **
+Project Management
+Development **
+Scoping
+
+Question 2)
+In an  Azure DevOps project creating a release pipeline provides which of the following portions of CI/CD?
+
+CD **
+CI
+
+Question 3)
+What does the CD in CI/CD mean?
+
+Both are correct **
+Continuous Delivery
+Continuous Deployment
+
+Question 4)
+What sort of pipeline is required in  Azure DevOps for creating artifacts used in releases?
+
+A Build pipeline **
+An Artifact pipeline
+A Release pipeline
+
+Question 5)
+What steps are required to authorize Azure DevOps to connect to and deploy notebooks to a staging or production Azure Databricks workspace?
+
+Create a new Access Token within the user settings in the production Azure Databricks workspace, then use the token as the Databricks bearer token in the Databricks Notebooks Deployment step of the Release pipeline **
+Create an  Azure Active Directory application, copy the application ID, then use that as the Databricks bearer token in the Databricks Notebooks Deployment step of the Release pipeline
+In the production or staging  Azure Databricks workspace, enable Git integration to Azure DevOps, then link to the Azure DevOps source code repo
+
+Question 6)
+In an Azure DevOps project creating a build pipeline provides which of the following portions of CI/CD
+
+CD
+CI **
+ 
+
+
+Knowledge check [PART 2] -->
+
+Question 1)
+What are the two prerequisites for connecting Azure Databricks with Azure Synapse Analytics that apply to the Azure Synapse Analytics instance?
+
+Add the client IP address to the firewall’s allowed IP addresses list and use the correctly formatted ConnectionString
+Create a database master key and configure the firewall to enable  Azure services to connect **
+Use a correctly formatted ConnectionString and create a database master key
+
+Question 2)
+Which of the following is the correct syntax for overwriting data in  Azure Synapse Analytics from a Databricks notebook?
+
+df.write.mode(“overwrite”).option(“…”).option(“…”).save()
+df.write.format(“com.databricks.spark.sqldw”).mode(“overwrite”).option(“…”).option(“…”).save() **
+df.write.format(“com.databricks.spark.sqldw”).overwrite().option(“…”).option(“…”).save()
+
+Question 3)
+The  Azure Synapse Connector uses Azure Blob Storage as intermediary storage and using PolyBase in Synapse enables MPP reads and writes to Synapse from Azure Databricks. However, the Synapse connector is more suited to ETL than to interactive queries. For interactive and ad-hoc queries, data should be extracted into which of the following?
+
+Azure Data Factory table
+Azure Databricks Delta table **
+Azure SQL database Table
+
+Question 4)
+You can access Azure Synapse from Databricks using the Azure Synapse connector which uses three types of network connections.
+Which of the following connections are used by Synapse Connector? Select all that apply.
+
+Spark driver and executors to  Azure storage account **
+Databricks connector to Spark driver
+ Azure Storage account to Databricks connection
+Spark driver to Azure Synapse **
+Azure Synapse to Azure storage account **
+
+Question 5)
+You can access Azure Synapse from Databricks using the Azure Synapse connector and it is recommended that the connection strings use Secure Sockets Layer (SSL) encryption for all data sent between the Spark driver and the Azure Synapse instance through the JDBC connection. To verify that SSL encryption is enabled, you should verify that which of the following is set in the connection string?
+
+encrypt=on
+encrypt=enabled
+encrypt=active
+encrypt=true **
+
+
+
+Knowledge check [PART 3] -->
+
+Question 1)
+Select two items from the following options to complete this statement correctly:
+ Azure Databricks uses  Azure Active Directory (AAD) as the exclusive Identity Provider. Any AAD member assigned to the ________ or ________ role can deploy Databricks and is automatically added to the ADB members list upon first login.
+
+Reader
+Owner **
+Contributor **
+User Access Administrator
+
+Question 2)
+Azure Databricks is a multitenant service and to provide fair resource sharing to all regional customers, it imposes limits on API calls. What is currently the restrictions on the maximum number of notebooks or execution contexts that can be attached to a cluster?
+
+100
+200
+150 **
+No Limit
+
+Question 3)
+Azure Databricks deployments are built on top of the  Azure infrastructure and currently have default restrictions or  Azure limits. Currently, what is the maximum number of storage accounts per region per subscription in Azure Databricks?
+
+1000
+150
+500
+250 **
+
+Question 4)
+Azure Databrick jobs use clusters and different types of jobs demand different types of cluster resources. When training machine learning models you should consider using which of the following?
+
+Autoscaling features
+Computing optimized VMs
+Memory optimized VMs **
+General purpose VMs
+
+Question 5)
+What is SCIM?
+
+An open standard that enables users to bring their own auth key to the Databricks environment
+An open standard that enables organizations to import both groups and users from  Azure Active Directory into  Azure Databricks **
+An optimization that removes orphaned data from a given dataset
+
+Question 6)
+If mounting an Azure Data Lake Storage (ADLS) account to a workspace, what cluster feature must be used to have ACLs within ADLS applied to the user executing commands in a notebook?
+
+Enable SCIM
+Set spark.config.adls.impersonateuser(true)
+Enable ADLS Passthrough on a cluster. **
+
+
+
+
+
+Test prep Quiz Answers -->
+
+Question 1)
+What does the CD in CI/CD mean?
+
+Both are correct **
+Continuous Delivery
+Continuous Deployment
+
+Question 2)
+What sort of pipeline is required in Azure DevOps for creating artifacts used in releases?
+
+An Artifact pipeline
+A Release pipeline
+A Build pipeline **
+
+Question 3)
+What steps are required to authorize Azure DevOps to connect to and deploy notebooks to a staging or production Azure Databricks workspace?
+
+Create an Azure Active Directory application, copy the application ID, then use that as the Databricks bearer token in the Databricks Notebooks Deployment step of the Release pipeline
+Create a new Access Token within the user settings in the production Azure Databricks workspace, then use the token as the Databricks bearer token in the Databricks Notebooks Deployment step of the Release pipeline **
+In the production or staging Azure Databricks workspace, enable Git integration to Azure DevOps, then link to the Azure DevOps source code repo
+
+Question 4)
+What are the two prerequisites for connecting Azure Databricks with Azure Synapse Analytics that apply to the Azure Synapse Analytics instance?
+
+Create a database master key and configure the firewall to enable Azure services to connect **
+Add the client IP address to the firewall’s allowed IP addresses list and use the correctly formatted ConnectionString
+Use a correctly formatted ConnectionString and create a database master key
+
+Question 5)
+Azure Databricks is a multitenant service and in order to provide fair resource sharing to all regional customers, limits are imposed on API calls. These limits are imposed at which level?
+
+The Subscription level
+The Cluster level
+The Workspace level **
+The Resource group level
+
+Question 6)
+Azure Databricks is a multitenant service and to provide fair resource sharing to all regional customers, it imposes limits on API calls. What is currently the maximum number of jobs that a workspace can create in an hour?
+
+200
+1000 **
+150
+500
+
+Question 7)
+In Azure Databricks you can deploy more than one Workspace. Best practice is to use the Hub and Spoke Model. Which of the following steps should be carried out to create a best practice Hub and Spoke Model in Azure Databricks?
+
+Join the Workspace spokes with the central networking hub using VNet Peering **
+Put all the common networking resources in a central hub Vet, including the custom DNS server **
+Join the Workspace spokes with the central networking hub using VNet Association
+Put all the common networking resources in a central hub VNet but excluding the custom DNS server.
+Deploy each Workspace in the same VNet
+Deploy each Workspace in its own VNet **
+
+Question 8)
+Select one of the following options to make this sentence correct:
+Azure Databricks guarantees by default a _______ % uptime SLA
+
+99.95 **
+99.9
+99.999
+99
+
+Question 9)
+If mounting an Azure Data Lake Storage (ADLS) account to a workspace, what cluster feature must be used to have ACLs within ADLS applied to the user executing commands in a notebook?
+
+Set spark.config.adls.impersonateuser(true)
+Enable ADLS Passthrough on a cluster. **
+Enable SCIM
+
+Question 10)
+What is SCIM?
+
+An optimization that removes orphaned data from a given dataset
+An open standard that enables users to bring their own auth key to the Databricks environment
+An open standard that enables organizations to import both groups and users from Azure Active Directory into Azure Databricks **
+
+
+-- LOK SETH

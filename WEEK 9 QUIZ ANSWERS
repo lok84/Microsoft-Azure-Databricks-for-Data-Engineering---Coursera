@@ -1,0 +1,163 @@
+Course Practice Exam Quiz Answers --> [Answers marked with **]
+
+Question 1)
+How many drivers does a Cluster have?
+
+Configurable between one and eight
+Two, running in parallel.
+Only one **
+
+Question 2)
+You work with Big Data as a data engineer, and you must process real-time data. This is referred to as having which of the following characteristics?
+
+High volume
+High velocity **
+Variety
+
+Question 3)
+How do you list files in DBFS within a  notebook?
+
+ls /my-file-path
+%fs dir /my-file-path
+%fs ls /my-file-path **
+
+Question 4)
+We can read a CVS file when using a  notebook and a spark session. Which of the following can be used to view the first couple of thousand characters of a file?
+
+%fs ls /mnt/training/wikipedia/pageviews/
+%fs dir /mnt/training/wikipedia/pageviews/
+%fs head /mnt/training/wikipedia/pageviews/pageviews_by_second.tsv **
+
+Question 5)
+When creating a new cluster in  Azure Databricks there are three Cluster Modes that can be set. Which of the following are valid Cluster Modes? Select three valid options.
+
+Standard **
+High Concurrency **
+Single Node **
+Low Concurrency
+Multi Node
+
+Question 6)
+What is the  Python syntax for defining a DataFrame in Spark from an existing Parquet file in DBFS?
+
+IPGeocodeDF = spark.parquet.read(“dbfs:/mnt/training/ip-geocode.parquet”)
+IPGeocodeDF = parquet.read(“dbfs:/mnt/training/ip-geocode.parquet”)
+IPGeocodeDF = spark.read.parquet(“dbfs:/mnt/training/ip-geocode.parquet”) **
+
+Question 7)
+Which feature of Spark determines how your code is executed?
+
+Tungsten Record Format
+Catalyst Optimizer **
+Java Garbage Collection
+
+Question 8)
+Which of the listed methods for renaming a DataFrame’s column are correct? Select two.
+
+df.toDF(“dateCaptured”) **
+df.select(col(“timestamp”).alias(“dateCaptured”)) **
+df.alias(“timestamp”, “dateCaptured”)
+
+Question 9)
+In  Azure Databricks you are about to do some ETL on a file you have received from a customer. The file contains data about people, including:
+
+first, middle and last names
+gender
+birth date
+Social Security number
+Salary
+
+
+You discover that the file contains some duplicate records and you have been instructed to remove any duplicates. The dropDuplicates() command will more than likely create a shuffle. To help reduce the number of post-shuffle partitions which of the following commands should you run?
+
+spark.conf.set(“spark.sql.partitions”, 8)
+spark.sql.conf.set(“spark.shuffle.partitions”, 8)
+spark.conf.set(“spark.sql.shuffle.partitions”, 8) **
+
+Question 10)
+A Microsoft-managed  Azure Databricks workspace virtual network (VNet) exists within the customer subscription. Information exchanged between this VNet and the Microsoft-managed  Azure Databricks Control Plane VNet is sent over a secure TLS connection using which Ports? Select two options.
+
+Port 443
+Port 22 **
+Port 6667
+Port 5557 **
+Port 53
+
+Question 11)
+You are starting to use Azure Databricks and you want to do specific network customizations, such as deploying Azure Databricks data plane resources in your own VNet. Which of the following will you configure?
+
+VNet Peering
+You cannot create a custom configuration with VNets
+VNet Injection **
+
+Question 12)
+Which of the following features are enabled through VNet injection? Select all options that apply.
+
+Service Endpoints ** 
+Features enabled through VNet injection include Service Endpoint. **
+Single-IP SNAT and Firewall-based filtering via custom routing **
+On-Premises Data Access **
+Managed VNet
+
+Question 13)
+What does  Azure Data Lake Storage (ADLS) Passthrough enable?
+
+Automatically mounting ADLS accounts to the workspace that are added to the managed resource group.
+User security groups that are added to ADLS are automatically created in the workspace as Databricks groups.
+Commands running on a configured cluster can read and write data in ADLS without configuring service principal credentials. **
+
+Question 14)
+What size does OPTIMIZE compact small files to?
+
+Around 1 GB **
+Around 100 MB
+Around 500MB
+
+Question 15)
+Which of the following can be used to successfully perform an UPSERT in a Delta dataset?
+
+Use UPSERT INTO my-table
+Use UPSERT INTO my-table /MERGE
+Use MERGE INTO my-table USING data-to-upsert **
+
+Question 16)
+What is a lambda architecture and what does it try to solve?
+
+An architecture that defines a data processing pipeline whereby microservices act as compute resources for efficient large-scale data processing
+An architecture that employs the latest  Scala runtimes in one or more Databricks clusters to provide the most efficient data processing platform available today
+An architecture that splits incoming data into two paths – a batch path and a streaming path. This architecture helps address the need to provide real-time processing in addition to slower batch computations. **
+
+Question 17)
+What happens if the command option(“checkpointLocation”, pointer-to-checkpoint directory) is not specified?
+
+It will not be possible to create more than one streaming query that uses the same streaming source since they will conflict
+The streaming job will function as expected since the checkpointLocation option does not exist
+When the streaming job stops, all state around the streaming job is lost, and upon restart, the job must start from scratch **
+
+Question 18)
+What’s the purpose of Activities in  Azure Data Factory?
+
+To represent a data store or a compute resource that can host execution of an activity
+To link data stores or computer resources together for the movement of data between resources
+To represent a processing step in a pipeline **
+
+Question 19)
+What steps are required to authorize  Azure DevOps to connect to and deploy  notebooks to a staging or production Azure Databricks workspace?
+
+Create an Azure Active Directory application, copy the application ID, then use that as the Databricks bearer token in the Databricks Notebooks Deployment step of the Release pipeline
+Create a new Access Token within the user settings in the production  Azure Databricks workspace, then use the token as the Databricks bearer token in the Databricks Notebooks Deployment step of the Release pipeline **
+In the production or staging Azure Databricks workspace, enable Git integration to Azure DevOps, then link to the Azure DevOps source code repo
+
+Question 20)
+In  Azure Databricks you can deploy more than one Workspace. Best practice is to use the Hub and Spoke Model. Which of the following steps should be carried out to create a best practice Hub and Spoke Model in Azure Databricks?
+
+Deploy each Workspace in its own VNet **
+Join the Workspace spokes with the central networking hub using VNet Association
+Put all the common networking resources in a central hub Vet, including the custom DNS server **
+Join the Workspace spokes with the central networking hub using VNet Peering **
+Put all the common networking resources in a central hub VNet but excluding the custom DNS server.
+Deploy each Workspace in the same VNet
+
+
+
+-- LOK SETH

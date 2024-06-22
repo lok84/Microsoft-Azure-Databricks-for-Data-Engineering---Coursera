@@ -1,0 +1,177 @@
+Knowledge check --> [Answers marked with **]
+
+Question 1)
+Stream processing is where you continuously incorporate new data into Data Lake storage and compute results. Which of the following would be examples of Stream processing?
+
+Bank Card Processing **
+Invoicing
+Game play events **
+Monthly Payroll processing
+IoT Device Data **
+
+Question 2)
+When creating a new event hub in the  Azure Portal you are required to specify a Namespace name. The namespace name must be unique in which of the following?
+
+Tenant Only
+Azure **
+Subscription only
+Resource group only
+
+Question 3)
+When doing a write stream command, what does the outputMode(“append”) option do?
+
+The append mode replaces existing records and updates aggregates
+The append mode allows records to be updated and changed in place
+The append outputMode allows records to be added to the output sink **
+
+Question 4)
+In Spark Structured Streaming, what method should be used to read streaming data into a DataFrame?
+
+spark.stream.read
+spark.read
+spark.readStream **
+
+Question 5)
+What happens if the command option(“checkpointLocation”, pointer-to-checkpoint directory) is not specified?
+
+When the streaming job stops, all state around the streaming job is lost, and upon restart, the job must start from scratch. **
+The streaming job will function as expected since the checkpointLocation option does not exist
+It will not be possible to create more than one streaming query that uses the same streaming source since they will conflict
+
+Question 6)
+Select the correct option to complete the statement below:
+In  Azure Databricks every streaming DataFrame must have a schema. That is the definition of column names and data types. For file based streaming sources the schema is __________.
+
+Both Defined for you and can be user defined if required
+Defined for you
+User Defined **
+ 
+
+
+
+Knowledge check -->
+
+Question 1)
+In  Azure Databricks when creating a new user access token, the Lifetime setting of the access token can be manually set. What is the default Lifetime (Days) value when creating a new access token?
+
+60 Days
+120 days
+90 **
+30 Days
+
+Question 2)
+In Azure Databricks when creating a new user access token, the Lifetime setting of the access token can be manually set. If the Token Lifetime is unspecified what will be the Lifetime(Days) of the token?
+
+90 Days
+120 Days
+30 Days
+Indefinite **
+60 Days
+
+Question 3)
+True or False?
+In  Azure Databricks, personal access tokens can be used for secure authentication to the Databricks API instead of passwords. After a new token is generated, it can be viewed by going back to the user settings from where it was generated.
+
+False **
+True
+
+Question 4)
+What’s the purpose of linked services in  Azure Data Factory?
+
+To link data stores or computer resources together for the movement of data between resources
+To represent a processing step in a pipeline
+To represent a data store or a compute resource that can host execution of an activity **
+
+Question 5)
+How can parameters be passed into an  Azure Databricks notebook from Azure Data Factory?
+
+Use the new API endpoint option on a notebook in Databricks and provide the parameter name
+Deploy the notebook as a web service in Databricks, defining parameter names and types
+Use notebook widgets to define parameters that can be passed into the notebook **
+
+Question 6)
+What happens to Databricks activities (notebook, JAR,  Python) in  Azure Data Factory if the target cluster in Azure Databricks isn’t running when the cluster is called by Data Factory?
+
+Simply add a Databricks cluster start activity before the notebook, JAR, or  Python Databricks activity
+If the target cluster is stopped, Databricks will start the cluster before attempting to execute **
+The Databricks activity will fail in  Azure Data Factory – you must always have the cluster running
+
+
+
+
+Test prep Quiz Answers -->
+
+Question 1)
+Stream processing is where you continuously incorporate new data into Data Lake storage and compute results. Which of the following are examples of Stream processing? Select all that apply.
+
+Invoicing
+Bank Card Processing **
+Monthly Payroll processing
+IoT Device Data **
+Game play events **
+
+Question 2)
+The following example creates a schema.
+dataSchema = “Recorded_At timestamp, Device string, Index long, Model string, User string, _corrupt_record String, gt string, x double, y double, z double”
+In SQL syntax this is referred to as which of the following?
+
+Data Control Language (DCL)
+Data Definition Language (DDL) **
+Data Manipulation Language(DML)
+
+Question 3)
+Which of the following syntax will allow you view the list of active streams in an Azure Databricks workspace?
+
+spark.streams
+spark.active.streams
+spark.streams.active **
+spark.active
+
+Question 4)
+What happens if the command option (“checkpointLocation”, pointer-to-checkpoint directory) is not specified?
+
+The streaming job will function as expected since the checkpointLocation option does not exist
+When the streaming job stops, all state around the streaming job is lost, and upon restart, the job must start from scratch **
+It will not be possible to create more than one streaming query that uses the same streaming source since they will conflict
+
+Question 5)
+Select the correct option to complete the statement below:
+In Azure Databricks a schema is the definition of column names and data types. For file based streaming sources in Azure Databricks the schema is __________.
+
+Not Required
+Defined for you
+User Defined **
+
+Question 6)
+In Spark Structured Streaming, what method should be used to read streaming data into a DataFrame?
+
+spark.stream.read
+spark.read
+spark.readStream **
+
+Question 7)
+In Azure Databricks when creating a new user access token, the Lifetime setting of the access token can be manually set. What is the default Token Lifetime when creating a new token?
+
+Indefinite
+90 Days **
+30 Days
+120 Days
+60 Days
+
+Question 8)
+What is the purpose of “Activities” in Azure Data Factory?
+
+To link data stores or computer resources together for the movement of data between resources
+To represent a data store or a compute resource that can host execution of an activity
+To represent a processing step in a pipeline **
+
+Question 9)
+How can parameters be passed into an Azure Databricks notebook from Azure Data Factory?
+
+Use notebook widgets **
+Deploy the notebook as a web service
+Use the API endpoint option on a notebook
+
+
+
+-- LOK SETH

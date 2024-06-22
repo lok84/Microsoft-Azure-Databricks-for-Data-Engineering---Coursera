@@ -1,0 +1,176 @@
+Knowledge check --> [Answers marked with **]
+
+Question 1)
+Delta Lake provides snapshots of data enabling developers to access and revert to earlier versions of data for audits, rollbacks or to reproduce experiments. This functionality is referred to as?
+
+Schema Enforcement
+Time Travel **
+Schema Evolution
+ACID Transactions
+
+Question 2)
+One of the core features of Delta Lake is performing upserts. Which of the following statements is true in regard to Upsert?
+
+Upsert is a new DML statement for SQL syntax
+UpSert is literally TWO operations. Update / Insert **
+Upsert is supported in traditional data lakes
+
+Question 3)
+When discussing Delta Lake, there is often a reference to the concept of Bronze, Silver and Gold tables. These levels refer to the state of data refinement as data flows through a processing pipeline and are conceptual guidelines. Based on these table concepts the refinements in Silver tables generally relate to which of the following?
+
+Raw data (or very little processing)
+Data that is directly queryable and ready for insights **
+Highly refined views of the data
+
+Question 4)
+What is the Databricks Delta command to display metadata?
+
+SHOW SCHEMA tablename
+DESCRIBE DETAIL tableName **
+MSCK DETAIL tablename
+
+Question 5)
+How do you perform UPSERT in a Delta dataset?
+
+Use UPSERT INTO my-table /MERGE
+Use UPSERT INTO my-table
+Use MERGE INTO my-table USING data-to-upsert **
+
+Question 6)
+What optimization does the following command perform: OPTIMIZE Students ZORDER BY Grade?
+
+Ensures that all data backing, for example, Grade=8 is colocated, then updates a graph that routes requests to the appropriate files.
+Ensures that all data backing, for example, Grade=8 is colocated, then rewrites the sorted data into new Parquet files. **
+Creates an order-based index on the Grade field to improve filters against that field.
+
+
+
+Knowledge check [PART 2] -->
+
+Question 1)
+The lambda architecture is a big data processing architecture combining both batch and real-time processing methods and features an append-only immutable data source.Which of the following are features of an append-only immutable data source? Select all that apply.
+
+Data is implicitly ordered by time of arrival **
+Timestamped events are appended to existing events **
+Timestamped events overwrite existing events
+serves as system of record **
+
+Question 2)
+Delta Lake Architecture improves upon the traditional Lambda architecture through a unified pipeline that allows you to combine batch and streaming workflows through a shared filestore with ACID-compliant transactions. What do the letters ACID stand for? Select 4 options.
+
+Durability **
+Isolation **
+Agile
+Consistency **
+Atomicity **
+Concurrency
+Implicit
+Desirable
+
+Question 3)
+In the Delta Lake architecture, the refinement of the data is often referred to as Bronze, Silver and Gold Tables. Which of the following tables provide business level aggregates often used for reporting and Dashboarding?
+
+Silver
+Bronze
+Gold **
+
+Question 4)
+What is a lambda architecture and what does it try to solve?
+
+An architecture that employs the latest  Scala runtimes in one or more Databricks clusters to provide the most efficient data processing platform available today.
+An architecture that defines a data processing pipeline whereby microservices act as compute resources for efficient large-scale data processing.
+An architecture that splits incoming data into two paths – a batch path and a streaming path. This architecture helps address the need to provide real-time processing in addition to slower batch computations. **
+
+Question 5)
+What command should be issued to view the list of active streams?
+
+Invoke spark.view.active
+Invoke spark.streams.show
+Invoke spark.streams.active **
+
+Question 6)
+What is required to specify the location of a checkpoint directory when defining a Delta Lake streaming query?
+
+.writeStream.format(“delta”).checkpoint(“location”, checkpointPath) …
+.writeStream.format(“parquet”).option(“checkpointLocation”, checkpointPath) …
+.writeStream.format(“delta”).option(“checkpointLocation”, checkpointPath) … **
+
+
+
+
+Test prep Quiz Answers -->
+
+Question 1)
+Delta Lake enables you to make changes to a table schema that can be applied automatically, without the need for DDL modifications. This functionality is referred to as?
+
+ACID Transactions
+Time Travel
+Schema Evolution **
+Schema Enforcement
+
+Question 2)
+One of the core features of Delta Lake is performing upserts. Which of the following statements is true regarding Upsert?
+
+Upsert is literally TWO operations. Update / Insert **
+Upsert is a new DML statement for SQL syntax
+Upsert is supported in traditional data lakes
+
+Question 3)
+What is the Databricks Delta command to display metadata?
+
+MSCK DETAIL tablename
+DESCRIBE DETAIL tableName **
+SHOW SCHEMA tablename
+
+Question 4)
+What optimization does the following command perform: OPTIMIZE Customers ZORDER BY City?
+
+Creates an order-based index on the City field to improve filters against that field
+Ensures that all data backing, for example, City=’London’ is colocated, then rewrites the sorted data into new Parquet files. **
+Ensures that all data backing, for example, City=”London” is colocated, then updates a graph that routes requests to the appropriate files.
+
+Question 5)
+What size does OPTIMIZE compact small files to?
+
+Around 1 GB **
+Around 100 MB
+Around 500MB
+
+Question 6)
+Which of the following can be used to successfully perform an UPSERT in a Delta dataset?
+
+Use MERGE INTO my-table USING data-to-upsert **
+Use UPSERT INTO my-table /MERGE
+Use UPSERT INTO my-table
+
+Question 7)
+The lambda architecture is a big data processing architecture combining both batch and real-time processing methods and features an append-only immutable data source. What are features of an append-only immutable data source? Select all that apply.
+
+Timestamped events are appended to existing events **
+Timestamped events overwrite existing events
+serves as system of record **
+Data is implicitly ordered by time of arrival **
+
+Question 8)
+In the Delta Lake architecture the refinement of the data is often referred to as Bronze, Silver and Gold Tables. Which of the following tables generally contain raw data ingested from various sources?
+
+Bronze **
+Gold
+Silver
+
+Question 9)
+What is a lambda architecture and what does it try to solve?
+
+An architecture that employs the latest Scala runtimes in one or more Databricks clusters to provide the most efficient data processing platform available today
+An architecture that defines a data processing pipeline whereby microservices act as compute resources for efficient large-scale data processing
+An architecture that splits incoming data into two paths – a batch path and a streaming path. This architecture helps address the need to provide real-time processing in addition to slower batch computations. **
+
+Question 10)
+What is required to specify the location of a checkpoint directory when defining a Delta Lake streaming query?
+
+.writeStream.format(“delta”).option(“checkpointLocation”, checkpointPath) … **
+.writeStream.format(“parquet”).option(“checkpointLocation”, checkpointPath) …
+.writeStream.format(“delta”).checkpoint(“location”, checkpointPath) …
+
+
+-- LOK SETH

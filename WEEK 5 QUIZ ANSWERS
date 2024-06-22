@@ -1,0 +1,132 @@
+Knowledge check --> [Answers marked with **]
+
+Question 1)
+True or False?
+ETL/ELT workflows including analytics workloads in  Azure Databricks can be operationalized using  Azure Data Factory pipelines.
+
+False
+True **
+
+Question 2)
+When you create an Azure Databricks service, a “Databricks appliance” is deployed as an Azure resource in your subscription. When a Databricks appliance is deployed into Azure which of the following resources are created? Select all that apply.
+
+Virtual Network **
+Azure SQL Database
+Network security Group **
+
+Question 3)
+In Azure Data Bricks the Blob Storage account provides default file storage within the workspace referred to as DBFS.
+What does DBFS stand for?
+
+Database File system
+Databricks File System **
+Data Block File System
+
+Question 4)
+In Azure Databricks when ADLS Passthrough is configured on a standard cluster you must set which of the following?
+
+Group Access
+Single User Access **
+Multiple Users
+
+Question 5)
+By default, all users can create and modify clusters unless an administrator enables cluster access control. With cluster access control, permissions determine a user’s abilities. There are four permission levels for a cluster. Select the correct four permissions.
+
+Can Edit
+Can Read
+Can Attach To **
+Can Manage **
+No Permissions **
+Can Restart **
+
+Question 6)
+Users access  Azure Databricks workspace with an  Azure AD account
+Is the following statement True or False?
+The user’s Azure AD account has to be added to the Azure Databricks workspace before they can access it.
+
+True **
+False
+
+
+
+
+Test prep Quiz Answers -->
+
+Question 1)
+A Microsoft-managed Azure Databricks workspace virtual network (VNet) exists within the customer subscription. Information exchanged between this VNet and the Microsoft-managed Azure Databricks Control Plane VNet is sent over a secure TLS connection using which Ports? Select two from the choices below.
+
+Port 6667
+Port 22 **
+Port 5557 **
+Port 443
+Port 53
+
+Question 2)
+Which of the following are hosted by the  Azure Databricks Control Plane? Select all that apply.
+
+Runtime Notebooks **
+Access control lists (ACLs) **
+Jobs **
+Clusters
+
+Question 3)
+In  Azure Databricks using workspace access control, individual permissions determine a user’s abilities. What permission must be set to allow the user the ability to change permissions?
+
+Run
+Manage **
+Edit
+
+Question 4)
+Azure Databricks has two types of secret scopes: Key Vault-backed and Databricks-backed. These secret scopes allow you to store secrets, such as database connection strings, securely. If someone tries to output a secret to a  notebook, it is replaced by which of the following?
+
+CONFIDENTIAL
+HIDDEN
+REDACTED **
+SECRET
+
+Question 5)
+You are starting to use  Azure Databricks, and you want to do specific network customizations, such as deploying Azure Databricks data plane resources in your own VNet. Which of the following will you configure?
+
+You cannot create a custom configuration with VNets
+VNet Peering
+VNet Injection **
+
+Question 6)
+Which of the following features are enabled through VNet injection? Select all that apply.
+
+Single-IP SNAT and Firewall-based filtering via custom routing **
+On-Premises Data Access **
+Managed VNet
+Service Endpoints **
+
+Question 7)
+Which statement about the  Azure Databricks Data Plane is true?
+
+The Data Plane is hosted within a Microsoft-managed subscription
+The Data Plane is hosted within the client subscription and is where all data is processed and stored **
+The Data Plane contains the Cluster Manager and coordinates data processing jobs
+
+Question 8)
+In which modes does  Azure Databricks provide data encryption?
+
+In-transit only
+At-rest and in-transit **
+At-rest only
+
+Question 9)
+What does Azure Data Lake Storage (ADLS) Passthrough enable?
+
+Automatically mounting ADLS accounts to the workspace that are added to the managed resource group
+User security groups that are added to ADLS are automatically created in the workspace as Databricks groups
+Commands running on a configured cluster can read and write data in ADLS without configuring service principal credentials **
+
+Question 10)
+What is an  Azure Key Vault-backed secret scope?
+
+It is the Key Vault Access Key used to securely connect to the vault and retrieve secrets
+Databricks secret scope that is backed by  Azure Key Vault instead of Databricks **
+It is a method by which you create a secure connection to Azure Key Vault from a  notebook and directly access its secrets within the Spark session
+
+
+
+-- LOK SETH
